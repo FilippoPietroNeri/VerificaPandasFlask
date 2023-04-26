@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: consolas, sans-serif;
+        }
+
+        .bg {
+            margin-bottom: 20px;
+            background-color: #2d2d30;
+            color: white;
+            padding: 5px 15px;
+            width: 15%;
+            border-radius: 5%;
+        }
+
+        .sub {
+            background-color: #2d2d30;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5%;
+        }
+
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <p>Esercizio 1 - Elenco degli appartamenti in vendita in un certo quartiere inserito dall'utente. </p>
+        <form method="get" action="/res/1/">
+            <label for="">Quartiere</label>
+            <br>
+            <input type="text" name="quartiere" placeholder="ex. bicocca">
+            <br><br>
+            <input class="sub" type="submit">
+        </form>
+    </div>
+    <div class="bg">
+        <p>Esercizio 2 - Visualizzare l'elenco in ordine alfabetico senza ripetizioni. (Metodo non Pandas) </p>
+        <form method="get" action="/res/2/">
+            <input class="sub" type="submit">
+        </form>
+    </div>
+    <div class="bg">
+        <p>Esercizio 3 - Visualizzare l'elenco in ordine alfabetico senza ripetizioni. (Metodo Pandas) </p>
+        <form method="get" action="/res/3/">
+            <input class="sub" type="submit">
+        </form>
+    </div>
+    <div class="bg">
+        <p>Esercizio 4 - Visualizzare il prezzo medio di una zona di Milano inserita dall'utente </p>
+        <form method="get" action="/res/4/">
+            <label for="">Zona</label>
+            <br>
+            <input type="text" name="zona" placeholder="ex. bicocca">
+            <br><br>
+            <input class="sub" type="submit">
+        </form>
+    </div>
+    <div class="bg">
+        <p>Esercizio 5 - Visualizzare il prezzo medio di ogni quartiere di Milano. Ordinare i risultati in ordine decrescente sul prezzo medio </p>
+        <form method="get" action="/res/5/">
+            <input class="sub" type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
